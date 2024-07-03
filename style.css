@@ -1,19 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  font-family: playwrite_gbs, sans-serif, Impact;
 }
 
 .logo-container {
-    display: flex;
-    justify-content: center;
-    height: 6rem;
-    flex-basis: 35%;
-    background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 6rem;
+  flex-basis: 35%;
+  background-color: gray;
 }
 
 .form-container {
-    flex-basis: 65%;
-    background-color: aquamarine;
+  flex-basis: 65%;
+  background-color: aquamarine;
 }
 
-
+@font-face {
+  font-family: "playwrite_gbs";
+  src: url("fonts/playwritegbs-variablefont_wght-webfont.woff2") format("woff2"),
+    url("fonts/playwritegbs-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
