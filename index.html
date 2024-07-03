@@ -30,12 +30,14 @@
                 <input
                   type="text"
                   id="name"
+                  minlength="2"
+                  maxlength="25"
                   required
                 />
               </div>
               <div>
                 <label for="lastname">LAST NAME</label>
-                <input type="text" id="lastname" required max/>
+                <input type="text" id="lastname" maxlength="40" required />
               </div>
             </div>
             <div class="form-row">
@@ -56,11 +58,23 @@
             <div class="form-row">
               <div>
                 <label for="pwd">PASSWORD</label>
-                <input type="password" id="pwd" required />
+                <input
+                  type="password"
+                  id="pwd"
+                  minlength="8"
+                  maxlength="20"
+                  required
+                />
               </div>
               <div>
                 <label for="confirmpwd">CONFIRM PASSWORD</label>
-                <input type="password" id="confirmpwd" required />
+                <input
+                  type="password"
+                  id="confirmpwd"
+                  minlength="8"
+                  maxlength="20"
+                  required
+                />
               </div>
             </div>
           </div>
