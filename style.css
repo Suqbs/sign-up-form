@@ -1,5 +1,9 @@
-:root {
-    font-size: 16px;
+@font-face {
+  font-family: "playwrite_gbs";
+  src: url("fonts/playwritegbs-variablefont_wght-webfont.woff2") format("woff2"),
+    url("fonts/playwritegbs-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -19,7 +23,7 @@ html {
 
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: row;
   font-family: playwrite_gbs, sans-serif, Impact;
   background-image: url(img/bg-leaf-eugene-golovesov.jpg);
@@ -33,7 +37,7 @@ body {
   flex-basis: 35%;
   column-gap: 2rem;
   padding: 0.5rem;
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
 }
 
@@ -44,61 +48,91 @@ body {
 
 .form-container {
   flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
   background-color: rgb(249, 250, 251);
+  padding-top: 9rem;
 }
 
 .introduction {
-    font-weight: bold;
+  font-weight: bold;
+  padding-right: 10rem;
 }
 
 .user-form {
-    background-color: white;
+  background-color: white;
+  padding: 0.8rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
-.user-form label {
-    display: block;
-    width: 13rem;
-}
-
-.user-form input {
-    width: 17rem;
-    height: 1.7rem;
+.introduction,
+.log-in-container,
+.user-form {
+  padding-left: 3rem;
 }
 
 .form-row {
-    display: flex;
-    column-gap: 6rem;
+  display: flex;
+  column-gap: 6rem;
 }
 
-.form-row-left {
-    margin-left: auto;
-}
-
-.user-form label, .user-form input
-{
-    font-family: Impact, sans-serif, system-ui;
-    font-size: 0.8rem;
+.user-form label,
+.user-form input {
+  font-family: Impact, sans-serif, system-ui;
+  font-size: 0.8rem;
 }
 
 .user-form label {
-    letter-spacing: 0.15rem;
+  display: block;
+  width: 13rem;
+  letter-spacing: 0.15rem;
+}
+
+.user-form input {
+  width: 17rem;
+  height: 1.8rem;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  padding-left: 0.4rem;
+  outline: none;
+}
+
+.form-row:not(:last-child) {
+  margin-bottom: 1.7rem;
 }
 
 .confirm-account-button {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    height: 3rem;
-    width: 15rem;
-    background-color: rgb(169, 27, 27);
-    border: none;
-    border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  height: 3rem;
+  width: 15rem;
+  background-color: rgb(169, 27, 27);
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  margin-left: 3rem;
 }
 
-@font-face {
-  font-family: "playwrite_gbs";
-  src: url("fonts/playwritegbs-variablefont_wght-webfont.woff2") format("woff2"),
-    url("fonts/playwritegbs-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.log-in-button {
+  color: rgb(169, 27, 27);
+  font-weight: bold;
+}
+
+input#pwd:invalid,
+input#confirmpwd,
+input:user-invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

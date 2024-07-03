@@ -14,44 +14,65 @@
     <div class="form-container">
       <p class="introduction">
         This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up to get
-        started.
+        in your life to help you realize your deepest dream. <br />
+        Sign up <em>now</em> to get started!
       </p>
       <p class="introduction">You <em>know</em> you want to.</p>
-      <form action="" method="get" class="user-form">
-        <span class="form-header-message">Let's do this!</span>
-        <div class="form-input-section">
-          <div class="form-row">
-            <div>
-              <label for="name">FIRST NAME</label>
-              <input type="text" id="name" />
+      <form action="" method="get">
+        <div class="user-form">
+          <span class="form-header-message"
+            ><strong>Let's do this!</strong></span
+          >
+          <div class="form-input-section">
+            <div class="form-row">
+              <div>
+                <label for="name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lastname">LAST NAME</label>
+                <input type="text" id="lastname" required max/>
+              </div>
             </div>
-            <div>
-              <label for="lastname">LAST NAME</label>
-              <input type="text" id="lastname" />
+            <div class="form-row">
+              <div>
+                <label for="mail">EMAIL</label>
+                <input type="email" id="mail" required />
+              </div>
+              <div>
+                <label for="phone">PHONE</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  pattern="[0-9]{10}|[0-9]{3}[\-. ][0-9]{3}[\-. ][0-9]{4}"
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div>
-              <label for="mail">EMAIL</label> <input type="email" id="mail" />
-            </div>
-            <div>
-              <label for="phone">PHONE</label> <input type="tel" id="phone" />
-            </div>
-          </div>
-          <div class="form-row">
-            <div>
-              <label for="pwd">PASSWORD</label>
-              <input type="password" id="pwd" />
-            </div>
-            <div>
-              <label for="confirmpwd">CONFIRM PASSWORD</label>
-              <input type="password" id="pwd" />
+            <div class="form-row">
+              <div>
+                <label for="pwd">PASSWORD</label>
+                <input type="password" id="pwd" required />
+              </div>
+              <div>
+                <label for="confirmpwd">CONFIRM PASSWORD</label>
+                <input type="password" id="confirmpwd" required />
+              </div>
             </div>
           </div>
         </div>
-        <button type="submit" class="confirm-account-button">Confirm Account</button>
+        <button type="submit" class="confirm-account-button">
+          Confirm Account
+        </button>
       </form>
+      <span class="log-in-container"
+        >Already have an account?
+        <span class="log-in-button">Log in</span></span
+      >
     </div>
   </body>
 </html>
