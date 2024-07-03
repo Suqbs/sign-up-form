@@ -8,19 +8,50 @@
   </head>
   <body>
     <div class="logo-container">
-        <img src="img/odin-lined.png" alt="Logo" class="logo-image">
-        <h1 class="logo-header">FURKAN</h1>
+      <img src="img/odin-lined.png" alt="Logo" class="logo-image" />
+      <h1 class="logo-header">FURKAN</h1>
     </div>
     <div class="form-container">
-      <p>
+      <p class="introduction">
         This is not a real online service! You know you need something like this
         in your life to help you realize your deepest dreams. Sign up to get
         started.
       </p>
-
-      <p>You <em>know</em> you want to.</p>
-
-      <form action=""></form>
+      <p class="introduction">You <em>know</em> you want to.</p>
+      <form action="" method="get" class="user-form">
+        <span class="form-header-message">Let's do this!</span>
+        <div class="form-input-section">
+          <div class="form-row">
+            <div>
+              <label for="name">FIRST NAME</label>
+              <input type="text" id="name" />
+            </div>
+            <div>
+              <label for="lastname">LAST NAME</label>
+              <input type="text" id="lastname" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="mail">EMAIL</label> <input type="email" id="mail" />
+            </div>
+            <div>
+              <label for="phone">PHONE</label> <input type="tel" id="phone" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="pwd">PASSWORD</label>
+              <input type="password" id="pwd" />
+            </div>
+            <div>
+              <label for="confirmpwd">CONFIRM PASSWORD</label>
+              <input type="password" id="pwd" />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="confirm-account-button">Confirm Account</button>
+      </form>
     </div>
   </body>
 </html>

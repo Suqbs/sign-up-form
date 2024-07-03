@@ -1,3 +1,7 @@
+:root {
+    font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +44,55 @@ body {
 
 .form-container {
   flex-basis: 65%;
-  background-color: aquamarine;
+  background-color: rgb(249, 250, 251);
+}
+
+.introduction {
+    font-weight: bold;
+}
+
+.user-form {
+    background-color: white;
+}
+
+.user-form label {
+    display: block;
+    width: 13rem;
+}
+
+.user-form input {
+    width: 17rem;
+    height: 1.7rem;
+}
+
+.form-row {
+    display: flex;
+    column-gap: 6rem;
+}
+
+.form-row-left {
+    margin-left: auto;
+}
+
+.user-form label, .user-form input
+{
+    font-family: Impact, sans-serif, system-ui;
+    font-size: 0.8rem;
+}
+
+.user-form label {
+    letter-spacing: 0.15rem;
+}
+
+.confirm-account-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    height: 3rem;
+    width: 15rem;
+    background-color: rgb(169, 27, 27);
+    border: none;
+    border-radius: 4px;
 }
 
 @font-face {
