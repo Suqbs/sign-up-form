@@ -146,6 +146,7 @@ input:user-invalid {
 
 input#pwd:invalid + span {
   position: relative;
+  white-space: nowrap;
 }
 
 input#pwd:invalid + span::before {
