@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+:root {
+  font-size: 32px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +82,7 @@ body {
 .user-form {
   background-color: white;
   padding: 1.5rem 0;
+  padding-right: 2rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -177,8 +182,8 @@ input#pwd:invalid + span::before {
   position: absolute;
   content: "*Passwords do not match.";
   color: red;
-  top: 30px;
-  right: 110px;
+  top: 2rem;
+  right: 7rem;
 }
 
 input:valid {
