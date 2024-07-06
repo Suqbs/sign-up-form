@@ -78,7 +78,7 @@ body {
 .user-form {
   background-color: white;
   padding: 1.5rem 0;
-  padding-right: 2rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
